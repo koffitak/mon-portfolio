@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Admin Système & Réseau</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+    header { background: #1f2937; color: white; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; }
+    nav { background: #111827; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    h2 { color: #1f2937; }
+    .skills, .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer { background: #1f2937; color: white; text-align: center; padding: 1rem; }
+    input, textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border-radius: 4px; border: 1px solid #ccc; }
+    button { padding: 0.5rem 1rem; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Koffi Takoya Voyïm-Be</h1>
+    <p>Administrateur Systèmes & Réseaux | Linux | Sécurité | Cloud</p>
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Administrateur systèmes & réseaux avec plus de 4 ans d'expérience dans la gestion d'infrastructures informatiques, la sécurité réseau, l'automatisation et le déploiement cloud (Azure, AWS). Certifié CAPM®, Azure Admin Associate, CCNA.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Systèmes</h3>
+        <ul>
+          <li>Linux (Debian, RHEL, Ubuntu)</li>
+          <li>Windows Server 2016/2019</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Réseaux</h3>
+        <ul>
+          <li>TCP/IP, VPN, DNS, DHCP, VLAN</li>
+          <li>Firewall : pfSense, Cisco ASA</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Outils</h3>
+        <ul>
+          <li>Ansible, Docker, Git</li>
+          <li>VMware ESXi, Hyper-V</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Scripting</h3>
+        <ul>
+          <li>Bash, PowerShell</li>
+          <li>Python (bases)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projets</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Déploiement VPN sécurisé</h3>
+        <p>Mise en place d’un serveur OpenVPN sous Debian pour connecter les sites distants d’une PME. Gestion des certificats, firewall, routage.</p>
+      </div>
+      <div class="card">
+        <h3>Automatisation Ansible</h3>
+        <p>Automatisation de la configuration de serveurs web Apache via des playbooks Ansible sur une infrastructure de test Ubuntu.</p>
+      </div>
+      <div class="card">
+        <h3>Surveillance avec Zabbix</h3>
+        <p>Supervision d’un parc de 50 serveurs avec alertes, monitoring CPU/RAM/disque, génération de rapports mensuels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p><a href="cv_koffi.pdf" download>Télécharger mon CV (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea rows="5" placeholder="Votre message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jean Dupont. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
